@@ -37,11 +37,13 @@ the output should be:
 it indicates the coeffciency for number 0 to 9 is:
 1,0,0,0,1,0,1,0,2,1
 
-which means, when number 0,4,6,9 appears, the weight is 1, and 8 gives weight two. thus:
+which means, when number 0,4,6,9 appears, the weight is 1, and 8 gives weight two. However, '4' does not
+exist in the content, so one should not count '4' in. (the reason was from the initial value of 1, which
+was the default value if some patterns did not exist. )thus:
 
 --- spoiler alert --
 
-count by circles, 0,4,6,9 have 1 circle while 8 has two circles.
+count by circles, 0,6,9 have 1 circle while 8 has two circles.
 
 one can easily make another set of problems and solve by this linear regression
 '''
