@@ -39,7 +39,7 @@ it indicates the coeffciency for number 0 to 9 is:
 
 which means, when number 0,4,6,9 appears, the weight is 1, and 8 gives weight two. However, '4' does not
 exist in the content, so one should not count '4' in. (the reason was from the initial value of 1, which
-was the default value if some patterns did not exist. )thus:
+was the default value if some patterns did not exist. One should use some large initial values though.) thus:
 
 --- spoiler alert --
 
@@ -91,4 +91,4 @@ xdata = numpy.transpose(parameter_matrix)
 x0=numpy.array([1,1,1,1,1,1,1,1,1,1])#initial guess 
 
 print 'fitting parameter is'
-print leastsq(_r_func, x0, args=(xdata, ydata))
+print leastsq(__residual, x0, args=(xdata, ydata))
