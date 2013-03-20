@@ -3,6 +3,8 @@
 
 a data scientist solution of the '8809=6' problem
 
+- update: thanks to Yan Wang's comment that I realized '4' is not an available signal which should not give weight '1'.
+ 
 a data scientist way to solve the 8809=6 problem
 
 author: hongliang liu
@@ -41,7 +43,10 @@ the output should be:
 it indicates the coeffciency for number 0 to 9 is:
 1,0,0,0,1,0,1,0,2,1
 
-which means, when number 0,4,6,9 appears, the weight is 1, and 8 gives weight two. thus:
+which means, when number 0,4,6,9 appears, the weight is 1, and 8 gives weight two. 
+Some comments from Yan Wang let me realized '4' does not exist in the list, so one should take out '4'.
+
+thus:
 
 --- spoiler alert --
 
